@@ -1,5 +1,12 @@
 apply plugin: 'java'
 apply plugin: 'idea'
+apply plugin: 'cat-codegen-java'
+
+codegenjava {
+	build {
+		packageName 'at.paukl.gradle'
+	}
+}
 
 repositories {
     mavenCentral()
