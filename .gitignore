@@ -7,5 +7,4 @@
 .gradle/
 .idea/
 build/
-buildSrc/
 target/generated-sources/
