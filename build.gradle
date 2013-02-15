@@ -5,6 +5,10 @@ apply plugin: 'cat-codegen-java'
 codegenjava {
 	build {
 		packageName 'at.paukl.gradle'
+
+        onGenerate = {
+            return ["testVar":"asdf", "test2":[1,2,3,4,5], "test3":["a":"asdf","b":"bsdf"]]
+        }
 	}
 }
 
